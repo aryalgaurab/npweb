@@ -68,3 +68,40 @@ body {
         transform: scale(1.5);
     }
 }
+
+@media (max-width: 1024px) { /* Tablet and small screen */
+    .text {
+        font-size: 3rem; /* Slightly smaller font size for tablets */
+    }
+
+    .glow-container {
+        width: 350px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) { /* Portrait mobile */
+    body {
+        height: auto; /* Allow body height to adjust in case the screen is short */
+    }
+
+    .text {
+        font-size: 2.5rem; /* Reduce text size on smaller screens */
+    }
+
+    .glow-container {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) { /* Small mobile devices */
+    .text {
+        font-size: 2rem; /* Further reduce the font size */
+    }
+
+    .glow-container {
+        width: 250px;
+        height: 120px;
+    }
+}
