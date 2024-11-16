@@ -1,6 +1,7 @@
 body {
   margin: 0;
   height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -81,7 +82,7 @@ body {
 @media (max-width: 768px) {
   /* Portrait mobile */
   body {
-    height: auto; /* Allow body height to adjust in case the screen is short */
+    min-height: 100vh; /* Allow body height to adjust in case the screen is short */
   }
 
   .text {
